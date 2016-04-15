@@ -17,6 +17,7 @@
 		B111CAB11CC08E6900389C70 /* BudgetScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B111CAB01CC08E6900389C70 /* BudgetScene.swift */; };
 		B111CAB31CC08E9D00389C70 /* MonthlyScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B111CAB21CC08E9D00389C70 /* MonthlyScene.swift */; };
 		B111CAB61CC08F0D00389C70 /* CategoryNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B111CAB51CC08F0D00389C70 /* CategoryNode.swift */; };
+		B111CAB81CC092DD00389C70 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B111CAB71CC092DD00389C70 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		B111CAB01CC08E6900389C70 /* BudgetScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetScene.swift; sourceTree = "<group>"; };
 		B111CAB21CC08E9D00389C70 /* MonthlyScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthlyScene.swift; sourceTree = "<group>"; };
 		B111CAB51CC08F0D00389C70 /* CategoryNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryNode.swift; sourceTree = "<group>"; };
+		B111CAB71CC092DD00389C70 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 			children = (
 				B111CA961CC0833F00389C70 /* AppDelegate.swift */,
 				B111CA9C1CC0833F00389C70 /* GameViewController.swift */,
+				B111CAB71CC092DD00389C70 /* Constants.swift */,
 				B111CAAE1CC08D4500389C70 /* Scenes */,
 				B111CAB51CC08F0D00389C70 /* CategoryNode.swift */,
 				B111CA9E1CC0833F00389C70 /* Main.storyboard */,
@@ -165,6 +168,7 @@
 				B111CA9D1CC0833F00389C70 /* GameViewController.swift in Sources */,
 				B111CAB11CC08E6900389C70 /* BudgetScene.swift in Sources */,
 				B111CA971CC0833F00389C70 /* AppDelegate.swift in Sources */,
+				B111CAB81CC092DD00389C70 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

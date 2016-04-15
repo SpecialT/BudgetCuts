@@ -13,25 +13,29 @@ class GameViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
 
-        let scene = MenuScene(size: CGSize(width: 768, height: 1024))
-        // Configure the view.
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("addCategory:"), name: NOTIFICATION_ADD_CATEGORY, object: nil)
+        
+        let scene = BudgetScene(size: CGSize(width: 768, height: 1024))
         let skView = self.view as! SKView
+        
         skView.showsFPS = true
         skView.showsNodeCount = true
         
-        /* Sprite Kit applies additional optimizations to improve rendering performance */
         skView.ignoresSiblingOrder = true
-        
         skView.multipleTouchEnabled = true
-        
-        /* Set the scale mode to scale to fit the window */
         scene.scaleMode = .AspectFill
         
         skView.presentScene(scene)
-
+    }
+    
+    func addCategory(notification: NSNotification) {
+        if let userInfo = notification.userInfo as? [String : AnyObject] {
+            if let name = userInfo["name"], let maxExp = userInfo["maxExp"] {
+                // communicate with database
+                print(name,maxExp)
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {

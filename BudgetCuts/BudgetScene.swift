@@ -13,5 +13,15 @@ class BudgetScene: SuperScene {
     override func initUI() {
         // code code code
         
+        self.addCategory("funky", maxExp: 200)
+    }
+    
+    func addCategory(name: String, maxExp: CGFloat) {
+        let dict: [String : AnyObject] = [
+            "name": name,
+            "maxExp": maxExp
+        ]
+        
+        NSNotificationCenter.defaultCenter().postNotificationName(NOTIFICATION_ADD_CATEGORY, object: self, userInfo: dict)
     }
 }
