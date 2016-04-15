@@ -1,4 +1,5 @@
-# BudgetCuts
-I like oreo's and pussy
+#BudgetCuts
+Budgeting done right...
+for once.
 
-in that order
+- Budgeting is our SpecialT
